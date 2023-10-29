@@ -6,7 +6,7 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 # Connect to the SQLite database
-conn = sqlite3.connect('tasks.db')
+conn = sqlite3.connect('track.db')
 cursor = conn.cursor()
 
 # Create a table for tasks if it doesn't exist
